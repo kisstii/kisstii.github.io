@@ -1,6 +1,6 @@
 console.log('Script file is loaded.')
 
-let myImage = ['/images/1.jpg', '/images/2.jpg', '/images/3.jpg', '/images/4.jpg', '/images/5.jpg', '/images/6.jpg', '/images/7.jpg', '/images/8.jpg', '/images/9.jpg'];
+let myImage = ['/Portugal/images/1.jpg', '/Portugal/images/2.jpg', '/Portugal/images/3.jpg', '/Portugal/images/4.jpg', '/Portugal/images/5.jpg', '/Portugal/images/6.jpg', '/Portugal/images/7.jpg', '/Portugal/images/8.jpg', '/Portugal/images/9.jpg'];
 
 let title = ['Porto', 'Porto', 'Batalha', 'Tomar', 'Sintra', 'Sintra', 'Fatima', 'Ocean', 'Ocean']
 
