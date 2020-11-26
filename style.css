@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #F8FFB8;
+  border: 12px solid #00DBDC;
+  max-width: 1280px;
+}
+
+nav {
+  position: relative;
+}
+
+nav #logo {
+  position: absolute;
+  width: 70px;
+  top: 11px;
+  left: 12px;
+}
+
+nav #hamburger {
+  position: absolute;
+  width: 30px;
+  top: 12px;
+  right: 14px;
+}
+
+#inicCont p {
+  padding-top: 2rem;
+}
+
+#inicCont p::first-letter {
+  font-size: 4.5rem;
+  color: #00DBDC;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  float: left;
+  padding-right: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+div.palmy {
+  position: absolute;
+  left: -145px;
+  top: 10px;
+  width: 132px;
+}
+
+@media screen and (max-width: 700px) {
+  div.palmy {
+    display: none;
+  }
+}
+
+main div.main-text {
+  margin: 0 auto;
+  width: 55%;
+  max-width: 700px;
+  position: relative;
+}
+
+main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: #00DBDC;
+  font-weight: 800;
+  text-align: left;
+  line-height: 3.375rem;
+  letter-spacing: -0.21rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+main p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #004E5D;
+  text-align: left;
+  line-height: 2.25rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+p.subtitle {
+  font-size: 1rem;
+  color: #909090;
+  padding-left: 1rem;
+  width: calc(100vw - 2rem - 24px);
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+div.pic {
+  padding-top: 2rem;
+}
+
+div.pic img {
+  position: relative;
+  height: 680px;
+  left: -12px;
+  z-index: -1;
+  margin-left: calc(50% - 628px);
+}
+
+div.main-pic {
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -318px;
+}
+
+div.main-pic > img {
+  mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0));
+  left: 0;
+}
+
+div.main-pic div.svgContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 175px;
+  z-index: 10;
+}
+
+div.main-pic div.svgContainer img:nth-child(1) {
+  width: 274px;
+  padding-bottom: 55px;
+}
+
+div.main-pic div.svgContainer img:nth-child(2) {
+  width: 284px;
+  padding-bottom: 55px;
+}
+
+div.main-pic div.svgContainer img:nth-child(3) {
+  width: 290px;
+}
+
+div.svgMap {
+  padding: 2rem 0 2rem;
+}
+/*# sourceMappingURL=style.css.map */
