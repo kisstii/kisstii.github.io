@@ -4,100 +4,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Travel Agency - Siargao</title>
+	<link rel="stylesheet" href="./style.css" />
+	<script src="./script.js" defer></script>
+	<title>Pizzeria Margherita</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Open+Sans&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-	<nav>
-		<img src="./svg/BTS_logo.svg" alt="logo" id="logo">
-		<img src="./svg/hamburger.svg" alt="hamburger" id="hamburger">
+	<div id="btnMenu">
+		<svg viewBox="0 0 40 40">
+			<rect class="a" x="0" y="0" width="20" height="2" />
+			<rect class="b" x="0" y="0" width="20" height="2" />
+			<rect class="c" x="0" y="0" width="20" height="2" />
+		</svg>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="./form_booking.html" target="_blank">Book a table</a></li>
+		</ul>
 	</nav>
 
-	<div class="main-pic">
-		<img src="./img/Coral.png" alt="Coral">
-		<div class="svgContainer">
-			<img src="./svg/Pilipinas_big_circle.svg" alt="badget">
-			<img src="./svg/Siargao_august.svg" alt="">
-			<img src="./svg/five_icons.svg" alt="">
-		</div>
-	</div>
-
-	<main>
-		<div class="main-text" id="inicCont">
-			<h1>
-				<div class="palmy">
-					<img src="./svg/palmy_initial.svg" alt="palmy">
-				</div>
-				here’s a theory that real adventure only starts when you’re some place you can’t get easily. The kind of
-				place that isn’t a tourist trap and where you can enjoy the major sites without being trampled by others.
-			</h1>
-			<p>After several stopovers and a propeller plane ride, you’ll arrive in a paradise often
-				described
-				as Bali 30 years ago but not yet been discovered by tourist hordes, nor by international hotel chains.</p>
-		</div>
-
-		<div class="pic">
-			<img src="./img/Islands.png" alt="Islands">
-			<p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium</p>
-		</div>
-
-		<div class="main-text">
-			<h1>Arrival<br> in<br> paradise</h1>
-			<p>Siargao is a completely different world to South East Asia’s usual hotspots. The environment, the pace of
-				life, and the people create a truly idyllic setting. You’ll find the locals are smiling and kind, and they
-				speak good English. Unlike many other tourist destinations, there are no “tourist prices” here. The locals are
-				very environmentally conscious as they know the natural environment is their most important treasure. Plastic
-				waste and plastic bottles are not common here, straws were banned way before Europe has even started the
-				discussions about the idea.</p>
-
-			<p>Within moments of arriving, you’ll get in the flow of this way of life, where everyone gets around by
-				habal-habal (a type of motorbike with a roof that’s kind of like a tuk-tuk) on the roads and by traditional
-				boat between the islands. You’ll even take a boat when zipping between the best beaches and surf spots.</p>
-
-			<p>One of the highlights of the trip is heading to the local market to buy all kinds of fresh fish, seafood,
-				fruit and veg. We’ll then take our haul over to a breathtakingly beautiful island where a local family will
-				cook a delicious traditional meal for us that we’ll enjoy on a white sandy beach.</p>
-		</div>
-
-		<div class="svgMap">
-			<img src="./svg/treasure_map.svg" alt="">
-		</div>
-
-		<div class="main-text">
-			<h1>Surfing over a<br> coral reef</h1>
-			<p>The island is surrounded by world class reefs and turquoise water. For those wanting the ultimate Siargao
-				experience, it’s worth taking the board out. All beginners get their own personal instructor because surfing
-				on reef-breaks can be dangerous for newbies. By the end of the trip, your surfing will improve more than
-				you’ve ever imagined, and you’ll definitely form a close bond with your instructor too. For experienced
-				surfers, the world-famous Cloud 9 surf spot is at Siargao, and with any luck you’ll be able to surf its
-				perfect tubes.</p>
-			<p> We planned the itinerary so that those who don’t want to surf also have a magical time. We will visit
-				lagoons by boat, climb caves, canoe in a jungle and of course sunbathe on the beach. </p>
-
-			<h1>Head to the party<br> in a boat</h1>
-			<p>The locals love to party, and there’s always a mix of surfers and locals enjoying themselves at one of the
-				island parties. In fact, a party is held on a different venue each night, sometimes even offshore on a tiny
-				island, so we’ll head there by boat. Did you know that rum is cheaper than cola on Siargao? Yep, that’s right.
-				Ordering a double rum and coke will be cheaper than ordering just a coke. Not to talk about triple rum-cokes.
-				Still you’ll want to keep track of your drinks so that you’re ready to head out surfing early the next
-				morning!</p>
-			<p> After spending 10 days in paradise you will fell in love with Siargao so deeply, that you’ll want to hide
-				this amazing destination from others to keep it unspoiled as it is now.</p>
-		</div>
-
-		<div class="pic">
-			<img src="./img/Seaside_Mini_Mart.png" alt="Seaside">
-			<p class="subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium</p>
-		</div>
+	<main id="main">
+		<section id="home">
+			<img src="./img/pizza.jpg" alt="pizzeria">
+			<h1>Pizzeria Margherita</h1>
+			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
+		</section>
+		<section id="about">
+			<h1>Welcome to the Italian Family Pizzeria!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+				deserunt mollit anim id est laborum.
+			</p>
+			<img src="./img/pizza2.jpg" alt="" id="imgAbout">
+			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
+		</section>
+		<section id="menu">
+			<img src="./svg/menu.svg" alt="menu1">
+			<img src="./svg/menu2.svg" alt="menu2">
+			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
+		</section>
 	</main>
-
 
 </body>
 
