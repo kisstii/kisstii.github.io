@@ -4,68 +4,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./style.css" />
-	<script src="./script.js" defer></script>
-	<title>Pizzeria Margherita</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="./app.js" defer></script>
+	<link rel="stylesheet" href="./style.css">
+	<title>Data Visualization</title>
 </head>
 
 <body>
-
-	<div id="btnMenu">
-		<svg viewBox="0 0 40 40">
-			<rect class="a" x="0" y="0" width="20" height="2" />
-			<rect class="b" x="0" y="0" width="20" height="2" />
-			<rect class="c" x="0" y="0" width="20" height="2" />
-		</svg>
+	<div id="root"></div>
+		<div class="wrapper">
+		<h1>Distribution of weight segments</h1>
+		<svg></svg>
+		<div id="seriesValue">Samples: 25000</div>
+		<pre id="hText"> Pounds 90  95  100  105  110  115 120  125  130  135 140  145  150  155  160  165 </pre>
+		<div id="headCount">Headcount</div>
+		<pre id="vText">
+			4500
+			4000
+			3500
+			3000
+			2500
+			2000
+			1500
+			1000
+			500
+			0
+		</pre>
 	</div>
-	<nav id="nav">
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#menu">Menu</a></li>
-			<li><a href="./form_booking.html" target="_blank">Book a table</a></li>
-		</ul>
-	</nav>
-
-	<main id="main">
-		<section id="home">
-			<img src="./img/pizza.jpg" alt="pizzeria">
-			<h1>Pizzeria Margherita</h1>
-			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
-		</section>
-		<section id="about">
-			<h1>Welcome to the Italian Family Pizzeria!</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-			<img src="./img/pizza2.jpg" alt="" id="imgAbout">
-			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
-		</section>
-		<section id="menu">
-			<img src="./svg/menu.svg" alt="menu1">
-			<img src="./svg/menu2.svg" alt="menu2">
-			<a href="./form_booking.html" target="_blank" class="btnBooking"><button>BOOK A TABLE!</button></a>
-		</section>
-	</main>
-
 </body>
 
 </html>
