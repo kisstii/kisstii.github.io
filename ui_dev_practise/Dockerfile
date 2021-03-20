@@ -1,2 +1,2 @@
 FROM nginx
-COPY build /usr/share/nginx/html
+COPY ui_dev_practise /usr/share/nginx/html
